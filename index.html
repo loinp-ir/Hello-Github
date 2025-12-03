@@ -1,24 +1,32 @@
-# frozen_string_literal: true
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tài liệu của tôi</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 40px; line-height: 1.6; }
+    h1 { text-align: center; }
+    a { color: #3366ff; }
+    .card { background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 15px 0; }
+  </style>
+</head>
+<body>
 
-Gem::Specification.new do |s|
-  s.name          = "jekyll-theme-cayman"
-  s.version       = "0.2.0"
-  s.license       = "CC0-1.0"
-  s.authors       = ["Jason Long", "GitHub, Inc."]
-  s.email         = ["opensource+jekyll-theme-cayman@github.com"]
-  s.homepage      = "https://github.com/pages-themes/cayman"
-  s.summary       = "Cayman is a Jekyll theme for GitHub Pages"
+<h1>📚 Tài Liệu Tổng Hợp</h1>
 
-  s.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
-  end
+<p>Chào mừng! Đây là danh sách tài liệu tôi muốn chia sẻ.</p>
 
-  s.required_ruby_version = ">= 2.4.0"
+<div class="card">
+  <h3>Tài liệu 1</h3>
+  <p>Mô tả ngắn.</p>
+  <a href="#">Xem chi tiết</a>
+</div>
 
-  s.platform = Gem::Platform::RUBY
-  s.add_runtime_dependency "jekyll", "> 3.5", "< 5.0"
-  s.add_runtime_dependency "jekyll-seo-tag", "~> 2.0"
-  s.add_development_dependency "html-proofer", "~> 3.0"
-  s.add_development_dependency "rubocop-github", "~> 0.16"
-  s.add_development_dependency "w3c_validators", "~> 1.3"
-end
+<div class="card">
+  <h3>Tài liệu 2</h3>
+  <p>Mô tả ngắn.</p>
+  <a href="#">Xem chi tiết</a>
+</div>
+
+</body>
+</html>
